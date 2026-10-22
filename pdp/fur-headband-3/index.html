@@ -1,44 +1,12 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=6,user-scalable=yes"><meta name="robots" content="noindex,nofollow"><title>털 복실 머리띠 3종 미리보기</title>
-<style>
-*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:#111;background:#fff}
-.top{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #eee;display:flex;align-items:center;gap:8px;padding:10px 14px}
-.top b{font-size:16px}.badge{font-size:11px;background:#fff4e5;color:#b45309;border-radius:6px;padding:2px 6px}
-.tabs{display:flex;gap:6px;padding:10px 14px;background:#fafafa;border-bottom:1px solid #eee;position:sticky;top:45px;z-index:5}
-.tabs button{flex:1;border:1px solid #ddd;background:#fff;border-radius:18px;padding:7px 0;font-size:13px;font-weight:600;color:#555}
-.tabs button.on{background:#111;color:#fff;border-color:#111}
-.sw{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}.sw::-webkit-scrollbar{display:none}
-.sw img{flex:0 0 100%;width:100%;aspect-ratio:1;object-fit:cover;scroll-snap-align:center}
-.cnt{position:relative}.cnt span{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;border-radius:12px;padding:2px 9px}
-.info{padding:16px 16px 6px}.store{font-size:13px;color:#16a34a;font-weight:700}.rk{color:#2563eb}
-.name{font-size:17px;margin:4px 0 10px;line-height:1.4}
-.pr{display:flex;align-items:baseline;gap:8px}.dc{color:#e11d48;font-weight:800;font-size:20px}.now{font-size:22px;font-weight:800}.org{color:#999;text-decoration:line-through;font-size:13px}
-.opts{margin:12px 16px;border:1px solid #eee;border-radius:10px;overflow:hidden}.opts div{display:flex;justify-content:space-between;padding:10px 12px;font-size:14px;border-top:1px solid #f2f2f2}.opts div:first-child{border-top:0}
-.ship{padding:0 16px 14px;color:#666;font-size:13px}
-.sep{height:10px;background:#f4f4f4}
-.dt h3{margin:0;padding:14px 16px;font-size:15px;border-bottom:1px solid #eee}
-.dt img{display:block;width:100%}
-.note{font-size:12px;color:#999;text-align:center;padding:20px}
-</style></head><body>
-<div class="top"><b>charencia</b><span class="badge">시안 미리보기</span></div>
-<div class="tabs" id="tabs"></div>
-<div class="cnt"><div class="sw" id="sw"></div><span id="ct"></span></div>
-<div class="info"><div class="store" id="store"></div><div class="name" id="name"></div><div class="pr" id="pr"></div></div>
-<div class="opts" id="opts"></div><div class="ship" id="ship"></div>
-<div class="sep"></div>
-<div class="dt"><h3>상세정보</h3><img src="d1.jpg" loading="lazy"><img src="d2.jpg" loading="lazy"><img src="d3.jpg" loading="lazy"><img src="d4.jpg" loading="lazy"><img src="d5.jpg" loading="lazy"><img src="d6.jpg" loading="lazy"><img src="d7.jpg" loading="lazy"><img src="d8.jpg" loading="lazy"></div>
-<div class="note">두 손가락으로 확대해서 볼 수 있어요. 실제 판매 페이지가 아닌 컨펌용 시안입니다.</div>
-<script>
-const D={"naver":{"label":"네이버","store":"차렌시아","name":"크리스마스 머리띠 털 복실 인형 3종 루돌프 눈사람 쿠키 파티 인생네컷 소품","price":3600,"opts":[["쿠키 (그린)",3600],["눈사람 (레드)",3600],["루돌프 (화이트)",3600],["3종 세트",9900]],"ship":"배송비 3,000원 (70,000원 이상 무료)","thumbs":["n1.jpg","n2.jpg","n3.jpg","n4.jpg","n5.jpg","n6.jpg"]},"coupang":{"label":"쿠팡","store":"차렌시아 · 판매자배송","name":"차렌시아 크리스마스 털 인형 머리띠","price":3600,"opts":[["쿠키 (그린)",3600],["눈사람 (레드)",3600],["루돌프 (화이트)",3600],["3종 세트",9900]],"ship":"배송비 3,000원","thumbs":["c1.jpg","c2.jpg","c3.jpg","c4.jpg"]},"rocket":{"label":"로켓그로스","store":"<span class=\"rk\">판매자로켓</span> · 차렌시아","name":"차렌시아 크리스마스 털 인형 머리띠 3개입 (쿠키+눈사람+루돌프)","price":12900,"opts":[["3개입 (쿠키+눈사람+루돌프)",12900]],"ship":"무료배송 · 로켓그로스","thumbs":["r1.jpg","r2.jpg","r3.jpg","r4.jpg"]}};
-const keys=Object.keys(D);let cur=keys[0];
-const tabs=document.getElementById('tabs');
-keys.forEach(k=>{const b=document.createElement('button');b.textContent=D[k].label;b.onclick=()=>show(k);tabs.appendChild(b);});
-const fmt=n=>n.toLocaleString('ko-KR')+'원';
-function show(k){cur=k;[...tabs.children].forEach((b,i)=>b.classList.toggle('on',keys[i]===k));const c=D[k];
- const sw=document.getElementById('sw');sw.innerHTML=c.thumbs.map(f=>'<img src="'+f+'">').join('');sw.scrollLeft=0;upd();
- document.getElementById('store').innerHTML=c.store;document.getElementById('name').textContent=c.name;
- document.getElementById('pr').innerHTML=(c.org?'<span class="dc">'+Math.round((1-c.price/c.org)*100)+'%</span>':'')+'<span class="now">'+fmt(c.price)+'</span>'+(c.org?'<span class="org">'+fmt(c.org)+'</span>':'');
- document.getElementById('opts').innerHTML=c.opts.map(o=>'<div><span>'+o[0]+'</span><b>'+fmt(o[1])+'</b></div>').join('');
- document.getElementById('ship').textContent=c.ship;}
-const sw=document.getElementById('sw');function upd(){const n=sw.children.length;const i=Math.round(sw.scrollLeft/sw.clientWidth)+1;document.getElementById('ct').textContent=i+' / '+n;}
-sw.addEventListener('scroll',upd);show(cur);
-</script></body></html>
+<style>*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;background:#fff;color:#111}
+.top{padding:12px 16px;font-weight:700;border-bottom:1px solid #eee}
+.cnt{position:relative}.sw{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}.sw::-webkit-scrollbar{display:none}
+.sw figure{flex:0 0 100%;margin:0;scroll-snap-align:center;position:relative}.sw img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.sw figcaption{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.5);color:#fff;font-size:11px;border-radius:10px;padding:2px 8px}
+#ct{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;border-radius:12px;padding:2px 9px}
+.dt img{display:block;width:100%}.sep{height:10px;background:#f4f4f4}</style></head><body>
+<div class="top">털 복실 머리띠 3종</div>
+<div class="cnt"><div class="sw" id="sw"><figure><img src="n1.jpg"><figcaption>네이버 1</figcaption></figure><figure><img src="n2.jpg"><figcaption>네이버 2</figcaption></figure><figure><img src="n3.jpg"><figcaption>네이버 3</figcaption></figure><figure><img src="n4.jpg"><figcaption>네이버 4</figcaption></figure><figure><img src="n5.jpg"><figcaption>네이버 5</figcaption></figure><figure><img src="n6.jpg"><figcaption>네이버 6</figcaption></figure><figure><img src="c1.jpg"><figcaption>쿠팡 1</figcaption></figure><figure><img src="c2.jpg"><figcaption>쿠팡 2</figcaption></figure><figure><img src="c3.jpg"><figcaption>쿠팡 3</figcaption></figure><figure><img src="c4.jpg"><figcaption>쿠팡 4</figcaption></figure><figure><img src="r1.jpg"><figcaption>로켓 3개입</figcaption></figure></div><span id="ct"></span></div>
+<div class="sep"></div><div class="dt"><img src="d1.jpg" loading="lazy"><img src="d2.jpg" loading="lazy"><img src="d3.jpg" loading="lazy"><img src="d4.jpg" loading="lazy"><img src="d5.jpg" loading="lazy"><img src="d6.jpg" loading="lazy"><img src="d7.jpg" loading="lazy"><img src="d8.jpg" loading="lazy"></div>
+<script>const sw=document.getElementById('sw');const u=()=>{document.getElementById('ct').textContent=(Math.round(sw.scrollLeft/sw.clientWidth)+1)+' / '+sw.children.length};sw.addEventListener('scroll',u);u();</script></body></html>
