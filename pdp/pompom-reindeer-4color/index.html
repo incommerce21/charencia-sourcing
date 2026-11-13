@@ -102,6 +102,20 @@ table{font-size:25px}th{width:190px}th,td{padding:16px 18px;line-height:1.6}
 /* tablefix 2026-11-12 */
 th{text-align:center!important;vertical-align:middle!important}
 td{vertical-align:middle}
+
+/* consistency 2026-11-12 */
+td .nl{display:block;white-space:nowrap;padding:7px 0;line-height:1.7}
+td .nl+.nl{border-top:1px dotted #e3d6c0}
+td .hl{display:block;white-space:nowrap;padding:0 0 6px;color:#7a6350}
+.setpics{margin-top:34px;padding-top:26px;border-top:1px dashed #c9b79f}
+.setpics .st{text-align:center;font-size:32px;color:#1d5c38;margin-bottom:6px}
+.setpics .ss{text-align:center;font-size:23px;color:#7a6350;margin-bottom:20px;line-height:1.6}
+.setpics .sg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
+.setpics figure{text-align:center}
+.setpics img{border-radius:12px;aspect-ratio:1;object-fit:cover}
+.setpics figcaption{margin-top:8px;font-size:23px;line-height:1.45}
+.setpics figcaption span{display:block;font-size:21px;color:#1d5c38}
+.info{padding:60px 40px!important}
 </style></head>
 <body><div class="wrap">
 
@@ -183,7 +197,7 @@ td{vertical-align:middle}
   <h3 class="cap" style="text-align:center;font-family:'Great Vibes',cursive;font-weight:400;font-size:46px;color:#c8102e;margin-bottom:26px">Product Info</h3>
   <table>
     <tr><th>상품명</th><td><span style="white-space:nowrap">폼폼 미니 니트 루돌프 오너먼트 4컬러</span> <span style="white-space:nowrap">(브라운·레드·크림·그레이)</span></td></tr>
-    <tr><th>구성</th><td><span style="white-space:nowrap">니트 루돌프 4개 세트</span> <span style="white-space:nowrap">(브라운 / 레드 / 크림 / 그레이 각 1개)</span></td></tr>
+    <tr><th>구성</th><td><span class="hl">니트 루돌프 4개 세트 (각 1개)</span><span class="nl">1. 브라운</span><span class="nl">2. 레드</span><span class="nl">3. 크림</span><span class="nl">4. 그레이</span></td></tr>
   </table>
 </section>
 <div class="ft"><div class="logo">charencia,</div><small>CHARENCIA CHRISTMAS DECORATION</small></div>
