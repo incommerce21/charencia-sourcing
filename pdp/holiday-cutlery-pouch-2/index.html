@@ -90,6 +90,19 @@ table{font-size:25px;table-layout:fixed}th,td{padding:16px 18px;line-height:1.55
 /* tablefix 2026-11-12 */
 th{text-align:center!important;vertical-align:middle!important}
 td{vertical-align:middle}
+
+/* consistency 2026-11-12 */
+td .nl{display:block;white-space:nowrap;padding:7px 0;line-height:1.7}
+td .nl+.nl{border-top:1px dotted #e3d6c0}
+td .hl{display:block;white-space:nowrap;padding:0 0 6px;color:#7a6350}
+.setpics{margin-top:34px;padding-top:26px;border-top:1px dashed #c9b79f}
+.setpics .st{text-align:center;font-size:32px;color:#1d5c38;margin-bottom:6px}
+.setpics .ss{text-align:center;font-size:23px;color:#7a6350;margin-bottom:20px;line-height:1.6}
+.setpics .sg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
+.setpics figure{text-align:center}
+.setpics img{border-radius:12px;aspect-ratio:1;object-fit:cover}
+.setpics figcaption{margin-top:8px;font-size:23px;line-height:1.45}
+.setpics figcaption span{display:block;font-size:21px;color:#1d5c38}
 </style></head>
 <body><div class="wrap">
 <section class="hd">
@@ -163,11 +176,11 @@ td{vertical-align:middle}
   <div class="sub">상품정보</div>
   <table>
     <tr><th>상품명</th><td><span style="white-space:nowrap">홀리데이 테이블</span> <span style="white-space:nowrap">커트러리 데코 파우치 2종</span></td></tr>
-    <tr><th>구성</th><td><span style="white-space:nowrap">2개 세트</span> <span style="white-space:nowrap">(눈사람 커트러리 파우치 1개</span> <span style="white-space:nowrap">+ 산타 커트러리 파우치 1개)</span></td></tr>
+    <tr><th>구성</th><td><span class="hl">2개 세트</span><span class="nl">1. 눈사람 커트러리 파우치 1개</span><span class="nl">2. 산타 커트러리 파우치 1개</span></td></tr>
     <tr><th>용도</th><td><span style="white-space:nowrap">수저·포크를 꽂아 두는</span> <span style="white-space:nowrap">크리스마스 테이블 데코 파우치</span> <span style="white-space:nowrap">(뒷면 주머니)</span></td></tr>
-    <tr><th>재질</th><td><span style="white-space:nowrap">천</span> <span style="white-space:nowrap">(판매자 표기)</span></td></tr>
-    <tr><th>크기</th><td><span style="white-space:nowrap">높이 18cm × 폭 11cm</span> <span style="white-space:nowrap">(판매자 표기)</span></td></tr>
-    <tr><th>무게</th><td><span style="white-space:nowrap">8g</span> <span style="white-space:nowrap">(1개 기준, 판매자 표기)</span></td></tr>
+    <tr><th>재질</th><td><span style="white-space:nowrap">천</span></td></tr>
+    <tr><th>크기</th><td><span style="white-space:nowrap">높이 18cm × 폭 11cm</span></td></tr>
+    <tr><th>무게</th><td><span style="white-space:nowrap">약 8g</span></td></tr>
   </table>
 </section>
 <div class="ft"><div class="logo">charencia,</div><small>CHARENCIA</small></div>
