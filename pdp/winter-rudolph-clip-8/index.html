@@ -96,6 +96,20 @@ table{font-size:25px}th{width:190px}th,td{padding:16px 18px;line-height:1.6}
 /* tablefix 2026-11-12 */
 th{text-align:center!important;vertical-align:middle!important}
 td{vertical-align:middle}
+
+/* consistency 2026-11-12 */
+td .nl{display:block;white-space:nowrap;padding:7px 0;line-height:1.7}
+td .nl+.nl{border-top:1px dotted #e3d6c0}
+td .hl{display:block;white-space:nowrap;padding:0 0 6px;color:#7a6350}
+.setpics{margin-top:34px;padding-top:26px;border-top:1px dashed #c9b79f}
+.setpics .st{text-align:center;font-size:32px;color:#1d5c38;margin-bottom:6px}
+.setpics .ss{text-align:center;font-size:23px;color:#7a6350;margin-bottom:20px;line-height:1.6}
+.setpics .sg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
+.setpics figure{text-align:center}
+.setpics img{border-radius:12px;aspect-ratio:1;object-fit:cover}
+.setpics figcaption{margin-top:8px;font-size:23px;line-height:1.45}
+.setpics figcaption span{display:block;font-size:21px;color:#1d5c38}
+.info{padding:60px 40px!important}
 </style></head>
 <body><div class="wrap">
 <section class="hd">
@@ -117,7 +131,7 @@ td{vertical-align:middle}
 <section class="sec">
   <h3 class="cap">Options</h3>
   <div class="sub">8가지 디자인 중에서 골라 주세요<br>옵션 하나에 오른쪽·왼쪽 2개가 한 세트로 들어 있어요</div>
-  <div class="optbox"><div class="optgrid"><div class="opt"><div class="im"><img src="img/s1.jpg" alt="폼폼 귀+방울 레드뿔"></div><b class="ti">1. 폼폼 귀+방울 레드뿔</b><i>Pompom Ear & Bell · Red Antler</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s2.jpg" alt="브라운뿔 리본+눈꽃"><img class="in" src="img/c2.jpg" alt="브라운뿔 리본+눈꽃 참고 사진"></div><b class="ti">2. 브라운뿔 리본+눈꽃</b><i>Brown Antler · Ribbon & Snowflake</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s3.jpg" alt="크리스마스트리 리본"><img class="in" src="img/c3.jpg" alt="크리스마스트리 리본 참고 사진"></div><b class="ti">3. 크리스마스트리 리본</b><i>Christmas Tree & Ribbon</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s4.jpg" alt="솔방울·버섯 루돌프핀"><img class="in" src="img/c4.jpg" alt="솔방울·버섯 루돌프핀 참고 사진"></div><b class="ti">4. 솔방울·버섯 루돌프핀</b><i>Pine Cone & Mushroom</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s5.jpg" alt="레드볼 장식 루돌프핀"><img class="in" src="img/c5.jpg" alt="레드볼 장식 루돌프핀 참고 사진"></div><b class="ti">5. 레드볼 장식 루돌프핀</b><i>Red Ball Ornament</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s6.jpg" alt="레드뿔 리본+눈꽃"><img class="in" src="img/c6.jpg" alt="레드뿔 리본+눈꽃 참고 사진"></div><b class="ti">6. 레드뿔 리본+눈꽃</b><i>Red Antler · Ribbon & Snowflake</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s7.jpg" alt="폼폼 귀+방울 브라운뿔"></div><b class="ti">7. 폼폼 귀+방울 브라운뿔</b><i>Pompom Ear & Bell · Brown Antler</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s8.jpg" alt="퍼 트리 루돌프핀"><img class="in" src="img/c8.jpg" alt="퍼 트리 루돌프핀 참고 사진"></div><b class="ti">8. 퍼 트리 루돌프핀</b><i>Fur Tree</i><em>2개 세트 (오른쪽·왼쪽)</em></div></div></div>
+  <div class="optbox"><div class="optgrid"><div class="opt"><div class="im"><img src="img/s1.jpg" alt="폼폼 귀+방울 레드뿔"></div><b class="ti">1. 폼폼 귀+방울 레드뿔</b><i>Pompom Ear & Bell · Red Antler</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s2.jpg" alt="브라운뿔 리본+눈꽃"></div><b class="ti">2. 브라운뿔 리본+눈꽃</b><i>Brown Antler · Ribbon & Snowflake</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s3.jpg" alt="크리스마스트리 리본"></div><b class="ti">3. 크리스마스트리 리본</b><i>Christmas Tree & Ribbon</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s4.jpg" alt="솔방울·버섯 루돌프핀"></div><b class="ti">4. 솔방울·버섯 루돌프핀</b><i>Pine Cone & Mushroom</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s5.jpg" alt="레드볼 장식 루돌프핀"></div><b class="ti">5. 레드볼 장식 루돌프핀</b><i>Red Ball Ornament</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s6.jpg" alt="레드뿔 리본+눈꽃"></div><b class="ti">6. 레드뿔 리본+눈꽃</b><i>Red Antler · Ribbon & Snowflake</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s7.jpg" alt="폼폼 귀+방울 브라운뿔"></div><b class="ti">7. 폼폼 귀+방울 브라운뿔</b><i>Pompom Ear & Bell · Brown Antler</i><em>2개 세트 (오른쪽·왼쪽)</em></div><div class="opt"><div class="im"><img src="img/s8.jpg" alt="퍼 트리 루돌프핀"></div><b class="ti">8. 퍼 트리 루돌프핀</b><i>Fur Tree</i><em>2개 세트 (오른쪽·왼쪽)</em></div></div><div class="setpics"><div class="st ti">2개 세트 구성</div><div class="ss">옵션 하나에 오른쪽·왼쪽 2개가 함께 들어 있어요</div><div class="sg"><figure><img src="img/c2.jpg" alt="브라운뿔 리본+눈꽃 2개 세트"><figcaption class="ti">2. 브라운뿔 리본+눈꽃<span>2개 세트 (오른쪽·왼쪽)</span></figcaption></figure><figure><img src="img/c3.jpg" alt="크리스마스트리 리본 2개 세트"><figcaption class="ti">3. 크리스마스트리 리본<span>2개 세트 (오른쪽·왼쪽)</span></figcaption></figure><figure><img src="img/c4.jpg" alt="솔방울·버섯 루돌프핀 2개 세트"><figcaption class="ti">4. 솔방울·버섯 루돌프핀<span>2개 세트 (오른쪽·왼쪽)</span></figcaption></figure><figure><img src="img/c5.jpg" alt="레드볼 장식 루돌프핀 2개 세트"><figcaption class="ti">5. 레드볼 장식 루돌프핀<span>2개 세트 (오른쪽·왼쪽)</span></figcaption></figure><figure><img src="img/c6.jpg" alt="레드뿔 리본+눈꽃 2개 세트"><figcaption class="ti">6. 레드뿔 리본+눈꽃<span>2개 세트 (오른쪽·왼쪽)</span></figcaption></figure><figure><img src="img/c8.jpg" alt="퍼 트리 루돌프핀 2개 세트"><figcaption class="ti">8. 퍼 트리 루돌프핀<span>2개 세트 (오른쪽·왼쪽)</span></figcaption></figure></div></div></div>
 </section>
 <img src="img/303772_03.jpg" alt="8종 나란히" style="width:92%;margin:0 auto 56px;border-radius:14px">
 
@@ -157,9 +171,6 @@ td{vertical-align:middle}
   <div class="pair"><img src="img/303762_09.jpg" alt="트리 핀"><img src="img/303762_06.jpg" alt="방울 핀"></div>
   <div class="pair"><img src="img/303762_07.jpg" alt="리본 눈꽃 핀"><img src="img/303762_08.jpg" alt="리본 눈꽃 핀 연출"></div>
   <img src="img/303772_07.jpg" alt="8종 각 2개 세트">
-  <div class="pair"><img src="img/c2.jpg" alt="브라운뿔 리본+눈꽃 참고"><img src="img/c6.jpg" alt="레드뿔 리본+눈꽃 참고"></div>
-  <div class="pair"><img src="img/c3.jpg" alt="크리스마스트리 리본 참고"><img src="img/c8.jpg" alt="퍼 트리 루돌프핀 참고"></div>
-  <div class="pair"><img src="img/c4.jpg" alt="솔방울·버섯 참고"><img src="img/c5.jpg" alt="레드볼 장식 참고"></div>
   <img src="img/303772_01.jpg" alt="8종 모음">
   <img src="img/303772_02.jpg" alt="8종 모음">
   <div style="height:56px"></div>
@@ -169,12 +180,12 @@ td{vertical-align:middle}
   <h3 class="cap" style="margin-bottom:26px">Product Info</h3>
   <table>
     <tr><th>상품명</th><td><span style="white-space:nowrap">윈터 루돌프 집게 머리핀</span> <span style="white-space:nowrap">시리즈 8종</span></td></tr>
-    <tr><th>옵션</th><td><span style="white-space:nowrap">8종 중 선택</span> <span style="white-space:nowrap">(각 2개 세트) —</span> <span style="white-space:nowrap">1. 폼폼 귀+방울 레드뿔 /</span> <span style="white-space:nowrap">2. 브라운뿔 리본+눈꽃 /</span> <span style="white-space:nowrap">3. 크리스마스트리 리본 /</span> <span style="white-space:nowrap">4. 솔방울·버섯 루돌프핀 /</span> <span style="white-space:nowrap">5. 레드볼 장식 루돌프핀 /</span> <span style="white-space:nowrap">6. 레드뿔 리본+눈꽃 /</span> <span style="white-space:nowrap">7. 폼폼 귀+방울 브라운뿔 /</span> <span style="white-space:nowrap">8. 퍼 트리 루돌프핀</span></td></tr>
+    <tr><th>옵션</th><td><span class="hl">8종 중 선택 (각 2개 세트)</span><span class="nl">1. 폼폼 귀+방울 레드뿔</span><span class="nl">2. 브라운뿔 리본+눈꽃</span><span class="nl">3. 크리스마스트리 리본</span><span class="nl">4. 솔방울·버섯 루돌프핀</span><span class="nl">5. 레드볼 장식 루돌프핀</span><span class="nl">6. 레드뿔 리본+눈꽃</span><span class="nl">7. 폼폼 귀+방울 브라운뿔</span><span class="nl">8. 퍼 트리 루돌프핀</span></td></tr>
     <tr><th>구성</th><td><span style="white-space:nowrap">옵션 1개당 2개 세트</span> <span style="white-space:nowrap">(오른쪽·왼쪽)</span></td></tr>
     <tr><th>형태</th><td>집게 머리핀</td></tr>
-    <tr><th>재질</th><td><span style="white-space:nowrap">합금, 수지, 거즈, 망사, 밍크털</span> <span style="white-space:nowrap">(판매자 표기)</span></td></tr>
-    <tr><th>크기</th><td><span style="white-space:nowrap">7.5 x 10 x 3cm</span> <span style="white-space:nowrap">(판매자 표기, 포장 기준)</span></td></tr>
-    <tr><th>무게</th><td><span style="white-space:nowrap">25g</span> <span style="white-space:nowrap">(판매자 표기, 1쌍 기준)</span></td></tr>
+    <tr><th>재질</th><td><span style="white-space:nowrap">합금, 수지, 거즈, 망사, 밍크털</span></td></tr>
+    <tr><th>크기</th><td><span style="white-space:nowrap">포장 기준 7.5×10×3cm</span></td></tr>
+    <tr><th>무게</th><td><span style="white-space:nowrap">약 25g</span></td></tr>
   </table>
 </section>
 <section class="notice"><ul><li>사진 속 솔방울, 트리 가지, 인형 등 연출 소품은 포함되지 않은 구성입니다.</li></ul></section>
