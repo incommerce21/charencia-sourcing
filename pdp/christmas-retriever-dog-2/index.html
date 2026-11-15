@@ -82,7 +82,27 @@ th{width:150px;background:#f3e9d6;font-family:'Gowun Batang',serif;font-weight:7
 .hero2 img{aspect-ratio:3/4;object-fit:cover}
 </style>
 </head>
-<body><div class="wrap">
+<body>
+<!-- 미리보기 전용, 몰 등록용 상세 추출 시 이 구역 제외 -->
+<style>
+#thumb-preview{width:860px;max-width:100%;margin:0 auto;background:#eceae6;padding:40px 30px 44px;border-bottom:6px solid #cfcac2;word-break:keep-all;overflow-wrap:break-word;color:#444}
+#thumb-preview h2{font-size:30px;line-height:1.4;text-align:center;margin-bottom:26px;font-weight:700}
+#thumb-preview .card{background:#f7f6f3;border:2px dashed #bdb8ae;border-radius:16px;padding:22px 20px 24px;margin-bottom:22px}
+#thumb-preview h3{font-size:25px;line-height:1.4;margin-bottom:16px}
+#thumb-preview .g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#thumb-preview .g2{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+#thumb-preview figure{margin:0}
+#thumb-preview img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:8px;display:block}
+#thumb-preview figcaption{text-align:center;font-size:21px;line-height:1.35;margin-top:8px;color:#555}
+</style>
+<section id="thumb-preview" data-preview-only="true">
+<h2>썸네일 미리보기 (확인용 · 상세에는 나오지 않아요)</h2>
+<div class="card"><h3>1) 네이버 · 앉은 리트리버 상품</h3><div class="g"><figure><img src="thumbprev_main_sitting.jpg" alt="대표"><figcaption>대표</figcaption></figure><figure><img src="thumbprev_add_01.jpg" alt="추가 1"><figcaption>추가 1</figcaption></figure><figure><img src="thumbprev_add_02.jpg" alt="추가 2"><figcaption>추가 2</figcaption></figure><figure><img src="thumbprev_add_03.jpg" alt="추가 3"><figcaption>추가 3</figcaption></figure><figure><img src="thumbprev_add_04.jpg" alt="추가 4"><figcaption>추가 4</figcaption></figure><figure><img src="thumbprev_add_05.jpg" alt="추가 5"><figcaption>추가 5</figcaption></figure><figure><img src="thumbprev_add_06.jpg" alt="추가 6"><figcaption>추가 6</figcaption></figure><figure><img src="thumbprev_add_07.jpg" alt="추가 7"><figcaption>추가 7</figcaption></figure><figure><img src="thumbprev_add_08.jpg" alt="추가 8"><figcaption>추가 8</figcaption></figure></div></div>
+<div class="card"><h3>2) 네이버 · 서 있는 리트리버 상품</h3><div class="g"><figure><img src="thumbprev_main_standing.jpg" alt="대표"><figcaption>대표</figcaption></figure><figure><img src="thumbprev_add_01.jpg" alt="추가 1"><figcaption>추가 1</figcaption></figure><figure><img src="thumbprev_add_02.jpg" alt="추가 2"><figcaption>추가 2</figcaption></figure><figure><img src="thumbprev_add_03.jpg" alt="추가 3"><figcaption>추가 3</figcaption></figure><figure><img src="thumbprev_add_04.jpg" alt="추가 4"><figcaption>추가 4</figcaption></figure><figure><img src="thumbprev_add_05.jpg" alt="추가 5"><figcaption>추가 5</figcaption></figure><figure><img src="thumbprev_add_06.jpg" alt="추가 6"><figcaption>추가 6</figcaption></figure><figure><img src="thumbprev_add_07.jpg" alt="추가 7"><figcaption>추가 7</figcaption></figure><figure><img src="thumbprev_add_08.jpg" alt="추가 8"><figcaption>추가 8</figcaption></figure></div></div>
+<div class="card"><h3>3) 쿠팡 · 옵션 2개 한 상품 (옵션별 대표이미지)</h3><div class="g g2"><figure><img src="thumbprev_main_sitting.jpg" alt="옵션1 앉은 리트리버 · 대표"><figcaption>옵션1 앉은 리트리버 · 대표</figcaption></figure><figure><img src="thumbprev_main_standing.jpg" alt="옵션2 서 있는 리트리버 · 대표"><figcaption>옵션2 서 있는 리트리버 · 대표</figcaption></figure></div></div>
+</section>
+<!-- /미리보기 전용 끝 -->
+<div class="wrap">
 <section class="hd">
   <div class="script">Merry X-mas</div>
   <div class="dots">● ● ●</div>
