@@ -101,8 +101,8 @@ td{vertical-align:middle}
 #thumb-preview img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:8px;display:block}
 #thumb-preview figcaption{text-align:center;font-size:22px;line-height:1.35;margin-top:8px;color:#555}
 
-.szchart{display:flex;align-items:flex-end;justify-content:center;gap:10px;padding:30px 14px 10px;background:#fff;border-radius:16px;border:2px solid #1d5c38}
-.szc{position:relative;text-align:center;padding-left:52px;box-sizing:content-box}
+.szchart{display:flex;align-items:flex-end;justify-content:center;gap:0;padding:30px 2% 10px;background:#fff;border-radius:16px;border:2px solid #1d5c38}
+.szc{position:relative;text-align:center;padding-left:6%;box-sizing:border-box}
 .szc img{display:block;width:100%;height:auto;margin:0 auto}
 .szc .wl{display:flex;align-items:center;margin:10px 0 6px;color:#491f0c;font-size:22px}
 .szc .wl i{flex:1;border-top:2px solid #491f0c;position:relative;height:0}
@@ -110,7 +110,7 @@ td{vertical-align:middle}
 .szc .wl i:first-child:before{left:0}.szc .wl i:last-child:after{right:0}
 .szc .wl b{padding:0 10px;font-family:'Gowun Batang',serif}
 .szc .nm{font-family:'Gowun Batang',serif;font-weight:700;font-size:30px;color:#c8102e;margin-top:4px}
-.szc .hl{position:absolute;left:30px;top:0;bottom:78px;width:2px;background:#491f0c}
+.szc .hl{position:absolute;left:3.6%;top:0;bottom:78px;width:2px;background:#491f0c}
 .szc .hl:before,.szc .hl:after{content:"";position:absolute;left:-7px;width:16px;height:2px;background:#491f0c}
 .szc .hl:before{top:0}.szc .hl:after{bottom:0}
 .szc .hl span{position:absolute;left:-30px;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:center;font-size:22px;font-family:'Gowun Batang',serif;white-space:nowrap;color:#491f0c;background:#fff;padding:0 6px}
@@ -120,6 +120,13 @@ td{vertical-align:middle}
 .optg3 .opt .sz{display:block;margin-top:6px;font-size:23px;color:#c8102e;font-family:'Gowun Batang',serif;font-weight:700}
 .pair2{display:grid;grid-template-columns:1fr 1fr;gap:4px}
 .pair2 img{aspect-ratio:1/1;object-fit:cover}
+@media(max-width:640px){
+.szchart{padding-top:18px}.szc .wl{font-size:11px;margin:6px 0 4px}.szc .wl b{padding:0 3px}.szc .nm{font-size:18px}
+.szc .hl span{font-size:11px;left:-24px;padding:0 2px}.szc .hl{bottom:56px}
+.sbox{gap:8px!important}.sbox>div{padding:12px 2px!important}.sbox .ti{font-size:20px!important}.sbox>div>div:nth-child(2){font-size:13px!important}.sbox>div>div:nth-child(3){font-size:20px!important;white-space:nowrap}
+.optg3{gap:10px}.optg3 .opt b{font-size:17px}.optg3 .opt .sz{font-size:14px}.optg3 .opt i{font-size:18px}
+table{font-size:17px}th{width:96px}
+}
 </style>
 </head>
 <body><section id="thumb-preview" data-preview-only="true">
@@ -183,12 +190,12 @@ td{vertical-align:middle}
   <h3 class="cap">Size</h3>
   <div class="sub">사이즈 안내 (세로 x 가로)</div>
   <div class="szchart">
-    <div class="szc" style="width:178px"><div class="hl"><span>15cm</span></div><img src="img/cut_small.png" alt="소"><div class="wl"><i></i><b>15cm</b><i></i></div><div class="nm">소</div></div>
-    <div class="szc" style="width:240px"><div class="hl"><span>22cm</span></div><img src="img/cut_mid.png" alt="중"><div class="wl"><i></i><b>22cm</b><i></i></div><div class="nm">중</div></div>
-    <div class="szc" style="width:310px"><div class="hl"><span>30cm</span></div><img src="img/cut_large.png" alt="대"><div class="wl"><i></i><b>30cm</b><i></i></div><div class="nm">대</div></div>
+    <div class="szc" style="width:23%"><div class="hl"><span>15cm</span></div><img src="img/cut_small.png" alt="소"><div class="wl"><i></i><b>15cm</b><i></i></div><div class="nm">소</div></div>
+    <div class="szc" style="width:31%"><div class="hl"><span>22cm</span></div><img src="img/cut_mid.png" alt="중"><div class="wl"><i></i><b>22cm</b><i></i></div><div class="nm">중</div></div>
+    <div class="szc" style="width:40%"><div class="hl"><span>30cm</span></div><img src="img/cut_large.png" alt="대"><div class="wl"><i></i><b>30cm</b><i></i></div><div class="nm">대</div></div>
   </div>
   <div class="sub" style="margin:10px 0 24px;font-size:17px">같은 비율로 나란히 놓은 크기 비교예요.</div>
-  <div style="display:flex;gap:14px;max-width:760px;margin:0 auto">
+  <div class="sbox" style="display:flex;gap:14px;max-width:760px;margin:0 auto">
     <div style="flex:1;background:#fff;border:2px solid #c8102e;border-radius:16px;padding:18px 6px;text-align:center"><div class="ti" style="font-size:30px;color:#c8102e">소</div><div style="font-size:21px;color:#7a6350;margin-top:4px">세로 x 가로</div><div class="ti" style="font-size:32px;color:#491f0c;line-height:1.3">15 x 15cm</div></div>
     <div style="flex:1;background:#fff;border:2px solid #c8102e;border-radius:16px;padding:18px 6px;text-align:center"><div class="ti" style="font-size:30px;color:#c8102e">중</div><div style="font-size:21px;color:#7a6350;margin-top:4px">세로 x 가로</div><div class="ti" style="font-size:32px;color:#491f0c;line-height:1.3">22 x 22cm</div></div>
     <div style="flex:1;background:#fff;border:2px solid #c8102e;border-radius:16px;padding:18px 6px;text-align:center"><div class="ti" style="font-size:30px;color:#c8102e">대</div><div style="font-size:21px;color:#7a6350;margin-top:4px">세로 x 가로</div><div class="ti" style="font-size:32px;color:#491f0c;line-height:1.3">30 x 30cm</div></div>
