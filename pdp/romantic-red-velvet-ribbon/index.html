@@ -101,8 +101,8 @@ td{vertical-align:middle}
 #thumb-preview img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:8px;display:block}
 #thumb-preview figcaption{text-align:center;font-size:22px;line-height:1.35;margin-top:8px;color:#555}
 
-.szchart{display:flex;align-items:flex-end;justify-content:center;gap:26px;padding:30px 20px 10px;background:#fff;border-radius:16px;border:2px solid #1d5c38}
-.szc{position:relative;text-align:center}
+.szchart{display:flex;align-items:flex-end;justify-content:center;gap:10px;padding:30px 14px 10px;background:#fff;border-radius:16px;border:2px solid #1d5c38}
+.szc{position:relative;text-align:center;padding-left:52px;box-sizing:content-box}
 .szc img{display:block;width:100%;height:auto;margin:0 auto}
 .szc .wl{display:flex;align-items:center;margin:10px 0 6px;color:#491f0c;font-size:22px}
 .szc .wl i{flex:1;border-top:2px solid #491f0c;position:relative;height:0}
@@ -110,10 +110,10 @@ td{vertical-align:middle}
 .szc .wl i:first-child:before{left:0}.szc .wl i:last-child:after{right:0}
 .szc .wl b{padding:0 10px;font-family:'Gowun Batang',serif}
 .szc .nm{font-family:'Gowun Batang',serif;font-weight:700;font-size:30px;color:#c8102e;margin-top:4px}
-.szc .hl{position:absolute;left:-30px;top:0;bottom:78px;width:2px;background:#491f0c}
+.szc .hl{position:absolute;left:30px;top:0;bottom:78px;width:2px;background:#491f0c}
 .szc .hl:before,.szc .hl:after{content:"";position:absolute;left:-7px;width:16px;height:2px;background:#491f0c}
 .szc .hl:before{top:0}.szc .hl:after{bottom:0}
-.szc .hl span{position:absolute;left:-44px;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:center;font-size:22px;font-family:'Gowun Batang',serif;white-space:nowrap;color:#491f0c;background:#fff;padding:0 6px}
+.szc .hl span{position:absolute;left:-30px;top:50%;transform:translateY(-50%) rotate(-90deg);transform-origin:center;font-size:22px;font-family:'Gowun Batang',serif;white-space:nowrap;color:#491f0c;background:#fff;padding:0 6px}
 .optg3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .optg3 .opt img{aspect-ratio:1/1;object-fit:cover;border-radius:12px}
 .optg3 .opt b{font-size:26px}
@@ -173,7 +173,7 @@ td{vertical-align:middle}
   <h3 class="cap">Styling</h3>
   <div class="sub">붉은 벨벳 리본 하나로 분위기가 달라져요</div>
   <img src="img/ai14.jpg" alt="벨벳 리본 연출">
-  <img src="img/ai16.jpg" alt="작은 벨벳 리본 연출" style="margin-top:4px">
+  <img src="img/real03.jpg" alt="소 사이즈 리본 전체" style="margin-top:4px">
   <img src="img/ai11.jpg" alt="손으로 만져 본 벨벳 리본" style="margin-top:4px">
   <img src="img/real07.jpg" alt="벨벳 리본 두 개" style="margin-top:4px">
   <div class="sub" style="margin-top:22px;font-size:17px;padding:0 20px 34px">사진 속 벨벳 볼 장식, 솔잎 가지, 흰 털 러그 등 다른 소품은 연출용이며 상품(구성품)이 아니에요.</div>
@@ -182,10 +182,10 @@ td{vertical-align:middle}
 <section class="sec">
   <h3 class="cap">Size</h3>
   <div class="sub">사이즈 안내 (세로 x 가로)</div>
-  <div class="szchart" style="padding-left:70px">
-    <div class="szc" style="width:165px"><div class="hl"><span>15cm</span></div><img src="img/cut_small.png" alt="소"><div class="wl"><i></i><b>15cm</b><i></i></div><div class="nm">소</div></div>
-    <div class="szc" style="width:242px"><div class="hl"><span>22cm</span></div><img src="img/cut_mid.png" alt="중"><div class="wl"><i></i><b>22cm</b><i></i></div><div class="nm">중</div></div>
-    <div class="szc" style="width:330px"><div class="hl"><span>30cm</span></div><img src="img/cut_large.png" alt="대"><div class="wl"><i></i><b>30cm</b><i></i></div><div class="nm">대</div></div>
+  <div class="szchart">
+    <div class="szc" style="width:178px"><div class="hl"><span>15cm</span></div><img src="img/cut_small.png" alt="소"><div class="wl"><i></i><b>15cm</b><i></i></div><div class="nm">소</div></div>
+    <div class="szc" style="width:240px"><div class="hl"><span>22cm</span></div><img src="img/cut_mid.png" alt="중"><div class="wl"><i></i><b>22cm</b><i></i></div><div class="nm">중</div></div>
+    <div class="szc" style="width:310px"><div class="hl"><span>30cm</span></div><img src="img/cut_large.png" alt="대"><div class="wl"><i></i><b>30cm</b><i></i></div><div class="nm">대</div></div>
   </div>
   <div class="sub" style="margin:10px 0 24px;font-size:17px">같은 비율로 나란히 놓은 크기 비교예요.</div>
   <div style="display:flex;gap:14px;max-width:760px;margin:0 auto">
@@ -201,7 +201,6 @@ td{vertical-align:middle}
 <section class="gal">
   <h3>Gallery</h3>
   <div class="sub">가까이서 자세히</div>
-  <img src="img/real03.jpg" alt="소 사이즈 리본 전체">
   <div class="pair"><img src="img/real04.jpg" alt="벨벳 리본 매듭" style="aspect-ratio:1"><img src="img/p_loop.jpg" alt="리본 걸이 고리" style="aspect-ratio:1"></div>
   <img src="img/ai15.jpg" alt="대 사이즈 벨벳 리본 클로즈업" style="margin-top:4px">
   <div class="pair"><img src="img/real08.jpg" alt="벨벳 주름 디테일" style="aspect-ratio:1"><img src="img/real01.jpg" alt="손에 든 소 사이즈 리본" style="aspect-ratio:1"></div>
