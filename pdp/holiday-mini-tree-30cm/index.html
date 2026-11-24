@@ -89,9 +89,27 @@ table{font-size:25px;table-layout:fixed}th,td{padding:16px 18px;line-height:1.55
 /* tablefix 2026-11-12 */
 th{text-align:center!important;vertical-align:middle!important}
 td{vertical-align:middle}
+
+#thumb-preview{width:860px;max-width:100%;margin:0 auto;background:#eceae6;padding:40px 0 44px;border-bottom:6px solid #cfcac2;word-break:keep-all;overflow-wrap:break-word;color:#444}
+#thumb-preview h2{font-size:30px;line-height:1.4;text-align:center;margin:0 20px 12px;font-weight:700}
+#thumb-preview .rule{font-size:22px;line-height:1.5;text-align:center;color:#666;margin:0 30px 26px}
+#thumb-preview .card{background:#f7f6f3;border-top:2px dashed #bdb8ae;border-bottom:2px dashed #bdb8ae;padding:22px 0 24px;margin-bottom:22px}
+#thumb-preview h3{font-size:25px;line-height:1.4;margin:0 30px 6px}
+#thumb-preview .hint{font-size:20px;color:#888;margin:0 30px 14px}
+#thumb-preview .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:0 30px;-webkit-overflow-scrolling:touch}
+#thumb-preview figure{flex:0 0 78%;scroll-snap-align:center;margin:0}
+#thumb-preview img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:8px;display:block}
+#thumb-preview figcaption{text-align:center;font-size:22px;line-height:1.35;margin-top:8px;color:#555}
 </style>
 </head>
-<body><div class="wrap">
+<body><section id="thumb-preview" data-preview-only="true">
+<h2>썸네일 미리보기 (확인용 · 상세에는 나오지 않아요)</h2>
+<div class="rule">옆으로 밀어서 넘겨 보세요. 네이버(차렌시아·데코프릴 공통, 일반몰 대표는 네이버 대표 재사용)와 쿠팡 판매자배송 대표예요.</div>
+<div class="card"><h3>1) 네이버 · 대표 1장 + 추가 8장</h3><div class="hint">대표는 낱개 상품 1개 연출컷 · 옆으로 넘기기 &#8594;</div><div class="track"><figure><img src="thumbprev_naver_main.jpg" alt="대표"><figcaption>대표 (1/9)</figcaption></figure><figure><img src="thumbprev_naver_add_01.jpg" alt="추가 1"><figcaption>추가 1 (2/9)</figcaption></figure><figure><img src="thumbprev_naver_add_02.jpg" alt="추가 2"><figcaption>추가 2 (3/9)</figcaption></figure><figure><img src="thumbprev_naver_add_03.jpg" alt="추가 3"><figcaption>추가 3 (4/9)</figcaption></figure><figure><img src="thumbprev_naver_add_04.jpg" alt="추가 4"><figcaption>추가 4 (5/9)</figcaption></figure><figure><img src="thumbprev_naver_add_05.jpg" alt="추가 5"><figcaption>추가 5 (6/9)</figcaption></figure><figure><img src="thumbprev_naver_add_06.jpg" alt="추가 6"><figcaption>추가 6 (7/9)</figcaption></figure><figure><img src="thumbprev_naver_add_07.jpg" alt="추가 7"><figcaption>추가 7 (8/9)</figcaption></figure><figure><img src="thumbprev_naver_add_08.jpg" alt="추가 8"><figcaption>추가 8 (9/9)</figcaption></figure></div></div>
+<div class="card"><h3>2) 쿠팡 · 판매자배송 대표 1장</h3><div class="hint">낱개 1개 · 연회색 스튜디오컷</div><div class="track"><figure><img src="thumbprev_coupang_main.jpg" alt="쿠팡 대표"><figcaption>쿠팡 판매자배송 대표</figcaption></figure></div></div>
+</section>
+<!-- /미리보기 전용 끝 -->
+<div class="wrap">
 <section class="hd">
   <div class="script">Merry X-mas</div>
   <div class="dots">● ● ●</div>
