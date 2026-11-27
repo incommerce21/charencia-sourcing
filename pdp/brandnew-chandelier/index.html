@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=860">
+<meta name="robots" content="noindex,nofollow">
+<title>브랜뉴 샹들리에 - 상세페이지 시안</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#e9e4da;font-family:'Gowun Dodum','Malgun Gothic',sans-serif;color:#3b2a20;-webkit-text-size-adjust:100%}
+.wrap{width:860px;max-width:100%;margin:0 auto;background:#fbf6ee}
+img{display:block;width:100%;height:auto}
+.ti{font-family:'Gowun Batang',serif;font-weight:700}
+.logo{font-family:'Great Vibes',cursive;color:#491f0c;font-size:34px;text-align:center}
+.hd{background:#2c3a52;color:#fff;text-align:center;padding:54px 40px 46px}
+.hd .script{font-family:'Great Vibes',cursive;font-size:78px;line-height:1.05;color:#d5deec}
+.hd .dots{letter-spacing:10px;color:#3d5a80;font-size:14px;margin:14px 0 16px}
+.hd h1{font-size:40px;line-height:1.3;color:#fff}
+.hd .en{font-family:'Great Vibes',cursive;font-size:34px;color:#d5deec;margin-top:6px}
+.hd .cl{margin-top:18px;font-size:21px;letter-spacing:1px;color:#f6e8c9}
+.intro{padding:64px 60px 56px;text-align:center}
+.intro .k{font-family:'Great Vibes',cursive;font-size:36px;color:#3d5a80}
+.intro h2{font-size:34px;line-height:1.45;margin:6px 0 22px}
+.intro p{font-size:21px;line-height:1.95;color:#5a3a22}
+.sec{padding:60px 50px}
+.cap{text-align:center;font-family:'Great Vibes',cursive;font-weight:400;font-size:46px;color:#3d5a80;line-height:1.1}
+.cap+.sub{text-align:center;font-size:19px;color:#7a6350;margin:6px 0 30px}
+.optbox{background:#fff;border:2px solid #2c3a52;border-radius:18px;padding:30px 30px 26px}
+.optgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.opt{text-align:center}
+.opt img{border-radius:12px;aspect-ratio:4/5;object-fit:cover}
+.opt b{display:block;margin-top:12px;font-size:23px;line-height:1.35}
+.opt i{display:block;font-style:normal;font-family:'Great Vibes',cursive;font-size:24px;line-height:1.2;color:#8a7260}
+.cprow{display:flex;align-items:stretch;background:#fff}
+.cprow:nth-child(even){flex-direction:row-reverse;background:#f6efe2}
+.cprow .ph{flex:0 0 430px}
+.cprow .ph img{height:100%;object-fit:cover;aspect-ratio:1}
+.cprow .tx{flex:1;padding:44px 40px;display:flex;flex-direction:column;justify-content:center}
+.cprow .no{font-family:'Great Vibes',cursive;color:#3d5a80;font-size:30px}
+.cprow h4{font-size:30px;line-height:1.35;margin:4px 0 14px}
+.cprow p{font-size:19px;line-height:1.85;color:#5a3a22}
+.od{display:flex;align-items:center;background:#fff}
+.od:nth-child(even){flex-direction:row-reverse;background:#f6efe2}
+.od .ph{flex:0 0 400px}
+.od .ph img{aspect-ratio:1;object-fit:cover}
+.od .tx{flex:1;padding:30px 36px}
+.od .sw{display:inline-block;width:16px;height:16px;border-radius:50%;margin-right:8px;border:1px solid #0002}
+.od h4{font-size:27px;margin-bottom:4px;line-height:1.35}
+.od .en{font-family:'Great Vibes',cursive;font-size:26px;color:#8a7260;margin-bottom:10px}
+.od p{font-size:19px;line-height:1.85;color:#5a3a22}
+.sty{background:#f6efe2;padding:56px 0 0}
+.sty .sub{text-align:center;font-size:19px;color:#7a6350;margin:6px 0 30px}
+.sty .g2{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.sty .g2 img{aspect-ratio:1;object-fit:cover}
+.sty>img{margin-top:4px}
+.gal{padding:56px 0 0;background:#2c3a52}
+.gal h3{text-align:center;font-family:'Great Vibes',cursive;font-weight:400;font-size:54px;color:#d5deec}
+.gal .sub{text-align:center;color:#f6e8c9;font-size:19px;margin:4px 0 30px;line-height:1.7}
+.gal .pair{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:4px}
+.gal .pair img{aspect-ratio:1;object-fit:cover}
+.gal>img{margin-top:4px}
+.info{padding:60px 50px}
+table{width:100%;border-collapse:collapse;font-size:19px;background:#fff}
+th,td{border:1px solid #d9cbb5;padding:14px 16px;text-align:left;line-height:1.6}
+th{width:150px;background:#f3e9d6;font-family:'Gowun Batang',serif;font-weight:700}
+.ft{padding:40px 0 46px;text-align:center;background:#f3e9d6}
+.ft small{display:block;font-size:14px;color:#8a7260;margin-top:2px;letter-spacing:1px}
+@media(max-width:640px){.cprow,.od{flex-direction:column!important}.cprow .ph,.od .ph{flex:none}.hd h1{font-size:28px}.hd .script{font-size:56px}.opt b{font-size:17px}.opt i{font-size:18px}}
+
+/* phonefix 2026-11-13 */
+html{-webkit-text-size-adjust:100%}
+body{word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden}
+.wrap{overflow:hidden}.wrap *{min-width:0;max-width:100%}
+img{max-width:100%}
+.hd{padding:60px 40px 52px}.hd .script{font-size:84px}.hd h1{font-size:48px;line-height:1.35}.hd .en{font-size:40px}.hd .cl{font-size:26px}
+.intro{padding:70px 50px 60px}.intro .k{font-size:44px}.intro h2{font-size:44px;line-height:1.4}.intro p{font-size:27px;line-height:1.7}
+.sec{padding:60px 40px}.cap{font-size:64px}.cap+.sub,.sty .sub{font-size:27px;line-height:1.6}.gal h3{font-size:64px}.gal .sub{font-size:27px}
+.optbox{padding:30px 24px 28px}.optgrid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px}
+.opt img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.opt b{font-size:27px;line-height:1.4}.opt i{font-size:30px}
+.setttl{font-size:38px}.setttl small{font-size:26px}.qty{font-size:24px;padding:4px 22px}.setfoot{font-size:27px;line-height:1.5}
+.cprow .ph{flex:0 0 400px}.cprow .tx{padding:36px 30px}.cprow .no{font-size:38px}.cprow h4{font-size:36px;line-height:1.35}.cprow p{font-size:26px;line-height:1.65}
+.od .ph{flex:0 0 380px}.od .tx{padding:30px 30px}.od h4{font-size:34px;line-height:1.35}.od .en{font-size:34px}.od p{font-size:26px;line-height:1.65}
+.od .sw{width:20px;height:20px}
+table{font-size:25px;table-layout:fixed}th,td{padding:16px 18px;line-height:1.55;word-break:keep-all}th{width:150px}
+.info{padding:60px 40px}.ft small{font-size:20px}.logo{font-size:44px}
+.optgrid[style]{grid-template-columns:minmax(0,1fr)!important}.optgrid[style] .opt img{width:100%;max-width:420px!important;margin:0 auto!important;display:block}
+
+/* tablefix 2026-11-12 */
+th{text-align:center!important;vertical-align:middle!important}
+td{vertical-align:middle}
+
+#thumb-preview{width:860px;max-width:100%;margin:0 auto;background:#eceae6;padding:40px 0 44px;border-bottom:6px solid #cfcac2;word-break:keep-all;overflow-wrap:break-word;color:#444}
+#thumb-preview h2{font-size:30px;line-height:1.4;text-align:center;margin:0 20px 12px;font-weight:700}
+#thumb-preview .rule{font-size:22px;line-height:1.5;text-align:center;color:#666;margin:0 30px 26px}
+#thumb-preview .card{background:#f7f6f3;border-top:2px dashed #bdb8ae;border-bottom:2px dashed #bdb8ae;padding:22px 0 24px;margin-bottom:22px}
+#thumb-preview h3{font-size:25px;line-height:1.4;margin:0 30px 6px}
+#thumb-preview .hint{font-size:20px;color:#888;margin:0 30px 14px}
+#thumb-preview .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:0 30px;-webkit-overflow-scrolling:touch}
+#thumb-preview figure{flex:0 0 78%;scroll-snap-align:center;margin:0}
+#thumb-preview img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:8px;display:block}
+#thumb-preview figcaption{text-align:center;font-size:22px;line-height:1.35;margin-top:8px;color:#555}
+
+.scale{display:flex;align-items:flex-end;justify-content:center;gap:12px;padding:30px 10px 10px}
+.scale .bx{border:3px dashed #2c3a52;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border-radius:10px;color:#491f0c;position:relative}
+.scale .bx b{font-size:24px;line-height:1.3;font-family:'Gowun Batang',serif}
+.scale .bx span{font-size:23px;line-height:1.4;color:#3d5a80}
+.scalenote{text-align:center;font-size:21px;color:#7a6350;margin:14px 0 0;line-height:1.7}
+.szrow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.szc{background:#fff;border:2px solid #3d5a80;border-radius:16px;padding:18px 8px;text-align:center}
+.szc b{display:block;font-size:26px;font-family:'Gowun Batang',serif;color:#491f0c;margin-bottom:6px}
+.szc span{font-size:25px;color:#3d5a80;line-height:1.5}
+.pd{padding:56px 0 0;background:#fff}
+.pd:nth-of-type(even){background:#f6efe2}
+.pd .tt{text-align:center;padding:0 30px 26px}
+.pd .tt .no{font-family:'Great Vibes',cursive;color:#3d5a80;font-size:44px}
+.pd .tt h3{font-size:42px;line-height:1.35;margin:2px 0 12px}
+.pd .tt p{font-size:26px;line-height:1.75;color:#5a3a22}
+.pd .tt .sz{display:inline-block;margin-top:14px;padding:8px 24px;border:2px solid #3d5a80;border-radius:30px;font-size:25px;color:#3d5a80;background:#fff}
+.pd .g2{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:4px}
+.pd .g2 img{aspect-ratio:1;object-fit:cover}
+.pd>img,.pd .g2{margin-top:4px}
+.opt .sz{display:block;margin-top:4px;font-size:24px;color:#3d5a80;font-family:'Gowun Dodum',sans-serif;line-height:1.4}
+.opt img{aspect-ratio:1/1}
+.note{font-size:22px;line-height:1.7;text-align:center;color:#7a6350;padding:26px 30px 36px}
+
+.p34 img{aspect-ratio:3/4!important;object-fit:cover}
+.pd .g2.p34{margin-top:4px}
+.opt.t34 img{aspect-ratio:3/4}
+.hero{width:100%}
+.kv{display:flex;justify-content:center;gap:18px;margin:26px 0 8px}
+.kv .big{background:#fff;border:3px solid #3d5a80;border-radius:18px;padding:22px 30px;text-align:center;font-family:'Gowun Batang',serif;font-weight:700;color:#491f0c}
+.kv .big span{display:block;font-size:26px;color:#7a6350;font-family:'Gowun Dodum',sans-serif;font-weight:400}
+.kv .big b{display:block;font-size:68px;line-height:1.15;color:#3d5a80}
+.pair,.sty .pair,.gal .pair{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:4px}
+.pair.p34 img,.sty .pair.p34 img,.gal .pair.p34 img{aspect-ratio:3/4;object-fit:cover}
+</style>
+</head>
+<body><section id="thumb-preview" data-preview-only="true">
+<h2>썸네일 미리보기 (확인용 · 상세에는 나오지 않아요)</h2>
+<div class="rule">옆으로 밀어서 넘겨 보세요. 모두 1:1 정사각이고 글자는 없어요.</div>
+<div class="card"><h3>대표 1장 + 추가 7장</h3><div class="hint">대표는 첫 번째 옵션 큰거 1개 · 추가는 큰거 3컷, 작은거 2컷, 큰거·작은거 함께 2컷 · 옆으로 넘기기 &#8594;</div><div class="track"><figure><img src="img/thumb_main.jpg" alt="대표 · 큰거 1개 (1/8)"><figcaption>대표 · 큰거 1개 (1/8)</figcaption></figure><figure><img src="img/thumb_add_01.jpg" alt="추가 1 · 큰거 손에 든 컷 (2/8)"><figcaption>추가 1 · 큰거 손에 든 컷 (2/8)</figcaption></figure><figure><img src="img/thumb_add_02.jpg" alt="추가 2 · 큰거 클로즈업 (3/8)"><figcaption>추가 2 · 큰거 클로즈업 (3/8)</figcaption></figure><figure><img src="img/thumb_add_03.jpg" alt="추가 3 · 큰거 클로즈업 (4/8)"><figcaption>추가 3 · 큰거 클로즈업 (4/8)</figcaption></figure><figure><img src="img/thumb_add_04.jpg" alt="추가 4 · 작은거 손에 든 컷 (5/8)"><figcaption>추가 4 · 작은거 손에 든 컷 (5/8)</figcaption></figure><figure><img src="img/thumb_add_05.jpg" alt="추가 5 · 작은거 (6/8)"><figcaption>추가 5 · 작은거 (6/8)</figcaption></figure><figure><img src="img/thumb_add_06.jpg" alt="추가 6 · 큰거 · 작은거 비교 (7/8)"><figcaption>추가 6 · 큰거 · 작은거 비교 (7/8)</figcaption></figure><figure><img src="img/thumb_add_07.jpg" alt="추가 7 · 큰거 · 작은거 트리 연출 (8/8)"><figcaption>추가 7 · 큰거 · 작은거 트리 연출 (8/8)</figcaption></figure></div></div>
+</section>
+<!-- /미리보기 전용 끝 -->
+<div class="wrap">
+<section class="hd">
+  <div class="script">Brand New</div>
+  <div class="dots">● ● ●</div>
+  <h1 class="ti">브랜뉴 샹들리에<br>큰거 · 작은거 2가지 사이즈</h1>
+  <div class="en">Chandelier Ornament</div>
+  <div class="cl">크리스마스 트리 장식 · 인테리어 소품</div>
+</section>
+<img src="img/w6.jpg" alt="큰거 작은거 샹들리에 트리 연출">
+<section class="intro">
+  <div class="k">Sparkle</div>
+  <h2 class="ti">트리 위에 걸어 두는<br>반짝이는 작은 샹들리에</h2>
+  <p>반짝이는 알갱이로 감싼 갓 아래에 투명한 물방울 장식이 달려 있어요.<br>빛을 받으면 은은하게 반짝여서 트리에 걸어도, 창가에 걸어도 분위기가 살아나요.</p>
+</section>
+
+<section class="sec">
+  <h3 class="cap">Item</h3><div class="sub">원하는 사이즈를 골라 담을 수 있어요</div>
+  <div class="optbox"><div class="optgrid">
+    <div class="opt"><img src="img/card_big.jpg" alt="큰거"><b class="ti">큰거</b><span class="sz">가로 7.5cm × 세로 12.5cm</span></div>
+    <div class="opt"><img src="img/sm6_sq.jpg" alt="작은거"><b class="ti">작은거</b><span class="sz">가로 6.5cm × 세로 11.5cm</span></div>
+  </div></div>
+  <div class="sub" style="margin:22px 0 0;font-size:24px">각 옵션은 낱개 1개예요.</div>
+</section>
+
+<section class="sec" style="padding-bottom:36px">
+  <h3 class="cap">Check Point</h3><div class="sub">브랜뉴 샹들리에의 매력 포인트 3가지</div>
+</section>
+<section>
+  <div class="cprow"><div class="ph"><img src="img/pair_sq.jpg" alt="큰거와 작은거 비교" style="aspect-ratio:1"></div>
+    <div class="tx"><div class="no">Point 1</div><h4 class="ti">큰거와 작은거<br>두 가지 크기</h4><p>큰거는 가로 7.5cm, 작은거는 가로 6.5cm예요. 함께 걸면 크기 차이가 자연스러운 포인트가 돼요.</p></div></div>
+  <div class="cprow"><div class="ph"><img src="img/s_c3.jpg" alt="샹들리에 클로즈업" style="aspect-ratio:1"></div>
+    <div class="tx"><div class="no">Point 2</div><h4 class="ti">반짝이는 알갱이와<br>투명한 물방울</h4><p>알갱이로 감싼 갓과 아래로 늘어진 투명한 물방울 장식이 빛을 받아 은은하게 반짝여요.</p></div></div>
+  <div class="cprow"><div class="ph"><img src="img/s_big_top.jpg" alt="걸이 끈이 달린 샹들리에" style="aspect-ratio:1"></div>
+    <div class="tx"><div class="no">Point 3</div><h4 class="ti">걸이 끈이 달려<br>바로 걸 수 있어요</h4><p>위쪽에 걸이 끈이 달려 있어 트리 가지나 창가에 걸기만 하면 돼요.</p></div></div>
+</section>
+<section class="pd">
+  <div class="tt"><div class="no">No.1</div><h3 class="ti">큰거</h3><div class="en" style="font-family:'Great Vibes',cursive;font-size:34px;color:#8a7260;margin-bottom:8px">Large</div><p>투명한 물방울 장식이 넉넉하게 달린 큰 사이즈 샹들리에예요. 둥근 크리스탈 장식과 물방울이 어우러져 존재감이 있어요.</p><span class="sz">가로 7.5cm × 세로 12.5cm</span></div>
+<div class="pair p34"><img src="img/p11.jpg" alt="큰거 샹들리에"><img src="img/p1.jpg" alt="손에 든 큰거 샹들리에"></div><div class="pair"><img src="img/s_c3.jpg" alt="큰거 클로즈업"><img src="img/s_c8.jpg" alt="큰거 손에 든 클로즈업"></div>
+</section>
+<section class="pd">
+  <div class="tt"><div class="no">No.2</div><h3 class="ti">작은거</h3><div class="en" style="font-family:'Great Vibes',cursive;font-size:34px;color:#8a7260;margin-bottom:8px">Small</div><p>큰거보다 한 뼘 작은 사이즈예요. 작은 가지나 좁은 공간에도 부담 없이 걸 수 있어요.</p><span class="sz">가로 6.5cm × 세로 11.5cm</span></div>
+<div class="pair p34"><img src="img/sm6_full.jpg" alt="작은거 샹들리에"><img src="img/p2.jpg" alt="손에 든 작은거 샹들리에"></div><div class="pair"><img src="img/sm6_tight.jpg" alt="작은거 샹들리에 클로즈업"><img src="img/sm5_tight.jpg" alt="작은거 샹들리에 클로즈업"></div>
+</section>
+<section class="sty">
+  <h3 class="cap">Styling</h3><div class="sub">큰거와 작은거를 함께 걸어 보세요</div><img src="img/w6.jpg" alt="큰거 작은거 트리 연출"><div class="pair p34"><img src="img/p5.jpg" alt="큰거 작은거 트리 연출"><img src="img/p7.jpg" alt="큰거 작은거 트리 연출"></div><img src="img/w13.jpg" alt="큰거 작은거 나란히" style="margin-top:4px">
+  <div class="sub" style="margin-top:22px;font-size:17px;padding:0 20px 34px">사진 속 트리, 별 장식, 벨벳 볼, 커튼 등 다른 소품은 연출용이며 상품(구성품)이 아니에요.</div>
+</section>
+
+<section class="sec">
+  <h3 class="cap">Size</h3><div class="sub">사이즈 안내 (가로 × 세로, cm)</div>
+  <img src="img/w13.jpg" alt="큰거 작은거 크기 비교" style="border-radius:14px">
+  <div class="sub" style="margin:14px 0 6px;text-align:center;font-size:25px">왼쪽이 큰거, 오른쪽이 작은거예요.</div>
+  <div class="kv"><div class="big"><span>큰거 (가로 × 세로)</span><b style="font-size:46px">7.5 × 12.5cm</b></div><div class="big"><span>작은거 (가로 × 세로)</span><b style="font-size:46px">6.5 × 11.5cm</b></div></div>
+  <div class="scale" style="gap:40px"><div class="bx" style="width:150px;height:250px"><b style="font-size:24px">큰거</b><span style="font-size:23px">가로 7.5<br>세로 12.5</span></div><div class="bx" style="width:130px;height:230px"><b style="font-size:24px">작은거</b><span style="font-size:23px">가로 6.5<br>세로 11.5</span></div></div><div class="scalenote">상자 크기는 실제 치수 비율로 그렸어요. (단위 cm, 가로 × 세로)</div>
+  <div class="sub" style="margin:26px 0 0;text-align:center;font-size:24px">손에 올려 보면 이 정도예요</div>
+  <div class="pair p34"><img src="img/p1.jpg" alt="손에 든 큰거"><img src="img/p2.jpg" alt="손에 든 작은거"></div>
+  <div class="sub" style="margin:10px 0 0;text-align:center;font-size:22px">왼쪽 큰거 · 오른쪽 작은거</div>
+  <div class="sub" style="margin:22px 0 0;text-align:center;line-height:1.7"><span style="font-size:20px">수작업·제조 과정에 따라 크기에 약간의 차이가 있을 수 있어요.</span></div>
+</section>
+
+<section class="gal">
+  <h3>Gallery</h3>
+  <div class="sub">여러 각도에서 자세히</div>
+  <div class="pair p34"><img src="img/p9.jpg" alt="큰거 샹들리에"><img src="img/p10.jpg" alt="큰거 샹들리에"></div><div class="pair p34"><img src="img/p3.jpg" alt="큰거 클로즈업"><img src="img/p8.jpg" alt="큰거 클로즈업"></div><div class="pair p34"><img src="img/p12.jpg" alt="큰거 작은거 나란히"><img src="img/p7.jpg" alt="큰거 작은거 연출"></div>
+</section>
+
+<section class="info">
+  <h3 class="cap">Product Info</h3><div class="sub">상품정보</div>
+  <table>
+    <tr><th>상품명</th><td>브랜뉴 샹들리에</td></tr>
+    <tr><th>옵션</th><td><span style="white-space:nowrap">1. 큰거</span><br><span style="white-space:nowrap">2. 작은거</span></td></tr>
+    <tr><th>크기<br>(가로×세로)</th><td>큰거 가로 7.5cm × 세로 12.5cm<br>작은거 가로 6.5cm × 세로 11.5cm</td></tr>
+    <tr><th>구성</th><td>선택한 옵션 낱개 1개</td></tr>
+    <tr><th>용도</th><td>크리스마스 트리 장식 · 인테리어 소품</td></tr>
+    <tr><th>안내</th><td>수작업·제조 과정에 따라 크기에 약간의 차이가 있을 수 있어요.<br>트리, 별 장식 등 사진 속 다른 소품은 구성품이 아니에요.</td></tr>
+  </table>
+</section>
+<div class="ft"><div class="logo" style="font-size:72px;line-height:1.2">charencia,</div><small>CHARENCIA</small></div>
+</div></body></html>
